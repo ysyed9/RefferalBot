@@ -1,11 +1,7 @@
 import praw
 import time
 import random
-from dotenv import load_dotenv
 import os
-
-# Load environment variables from .env file
-load_dotenv()
 
 # Your Reddit credentials (from .env file)
 client_id = os.getenv('REDDIT_CLIENT_ID')
