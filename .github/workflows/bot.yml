@@ -30,5 +30,13 @@ jobs:
           echo "REDDIT_USERNAME=${{ secrets.REDDIT_USERNAME }}" >> $GITHUB_ENV
           echo "REDDIT_PASSWORD=${{ secrets.REDDIT_PASSWORD }}" >> $GITHUB_ENV
 
+      - name: Print environment variables (Debugging step)
+        run: |
+          echo "REDDIT_CLIENT_ID=${{ secrets.REDDIT_CLIENT_ID }}"
+          echo "REDDIT_CLIENT_SECRET=${{ secrets.REDDIT_CLIENT_SECRET }}"
+          echo "REDDIT_USER_AGENT=${{ secrets.REDDIT_USER_AGENT }}"
+          echo "REDDIT_USERNAME=${{ secrets.REDDIT_USERNAME }}"
+          echo "REDDIT_PASSWORD=${{ secrets.REDDIT_PASSWORD }}"
+
       - name: Run Reddit Bot
         run: python Reddit_Bot.py
