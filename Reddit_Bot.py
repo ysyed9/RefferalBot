@@ -2,7 +2,7 @@ import praw
 import time
 import os
 
-# Load environment variables from GitHub Actions (dotenv is not needed here)
+# Your Reddit credentials from environment variables
 client_id = os.getenv('REDDIT_CLIENT_ID')
 client_secret = os.getenv('REDDIT_CLIENT_SECRET')
 user_agent = os.getenv('REDDIT_USER_AGENT')
